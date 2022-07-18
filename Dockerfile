@@ -2,7 +2,7 @@ FROM jenkins/jenkins:2.60.3
 
 LABEL maintainer="liorhagbi@gmail.com"
 #COPY plugins_extra.txt /usr/share/jenkins/ref/plugins_extra.txt
-COPY --chown=jenkins:jenkins plugins_extra.txt /usr/share/jenkins/ref/plugins/plugins_extra.txt
+COPY --chown=jenkins:jenkins plugins_extra.txt /usr/share/jenkins/ref/plugins_extra.txt
 
 ENV JENKINS_HOME /var/jenkins_home
 
