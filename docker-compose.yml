@@ -16,7 +16,7 @@ version: '3.3'
 
 secrets:
   adminpw:
-    file: ./secret/admin.txt
+    file: ./secret/adminpw.txt
 volumes:
   jenkins_home:
 
