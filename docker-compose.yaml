@@ -4,6 +4,8 @@ services:
   jenkins: 
     build: 
       context: .
+      args:
+        JAVA_OPTS: '-Djenkins.CLI.disabled=true'
     ports: 
       - 8080:8080
       - 50000:50000
