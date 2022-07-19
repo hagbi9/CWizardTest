@@ -1,4 +1,4 @@
-FROM jenkins/jenkins:2.60.3
+FROM jenkins/jenkins4casc:latest
 
 LABEL maintainer="liorhagbi@gmail.com"
 COPY plugins.txt /usr/share/jenkins/ref/plugins.txt
