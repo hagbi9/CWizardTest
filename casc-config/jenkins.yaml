@@ -11,7 +11,7 @@ jenkins:
       allowsSignup: false
       users:
        - id: admin
-         password: ${adminpw:-passw0rd}
+         password: ${{ secrets.PASSWORD }}
 
   authorizationStrategy:
     globalMatrix:
@@ -34,7 +34,7 @@ credentials:
             scope:    GLOBAL
             id:       github-user
             username: hagbi9
-            password: ${github:-githubPassw0rd}
+            password: ${{ secrets.PASSWORD }}
             description: github username/password  
 
 tool:
