@@ -20,8 +20,6 @@ services:
     environment:
       - CASC_JENKINS_CONFIG=/var/jenkins_conf
 secrets: 
-    github:
-     file: ${{ secrets.PASSWORD }}
   adminpw:
      file: ./adminpw.txt
 
