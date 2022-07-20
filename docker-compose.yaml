@@ -21,7 +21,7 @@ services:
       - CASC_JENKINS_CONFIG=/var/jenkins_conf
 secrets: 
     github:
-     file: /var/praqma-jenkins-casc/secrets/github
+     file: ${{ secrets.PASSWORD }}
   adminpw:
      file: ./adminpw.txt
 
