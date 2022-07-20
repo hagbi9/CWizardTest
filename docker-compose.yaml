@@ -15,8 +15,8 @@ services:
     secrets:
       - github  #Github username with password as an example. Purpose here is to have a user with write-access for special cases. Like the git-publisher.
       - adminpw  #Initial adminstrator user password. Added for debugging purposes. Should be removed prior to go-live.
-      - ${{ secrets.PASSWORD }}
-      - ${{ secrets.USERNAME }}
+      - Pass: ${{ secrets.PASSWORD }}
+      - User: ${{ secrets.USERNAME }}
     environment:
       - CASC_JENKINS_CONFIG=/var/jenkins_conf
 secrets: 
