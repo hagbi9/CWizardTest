@@ -19,7 +19,7 @@ jenkins:
         - "Overall/Read:anonymous"
         - "Job/Read:anonymous"
         - "View/Read:anonymous"
-        - "Overall/Administer:anonymous"
+        - "Overall/Administer:authenticated"
 
   crumbIssuer: "standard"
 
