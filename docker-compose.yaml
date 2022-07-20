@@ -21,7 +21,7 @@ services:
       - CASC_JENKINS_CONFIG=/var/jenkins_conf
 secrets: 
   adminpw:
-     file: secret/adminpw.txt
+     file: /secrets/adminpw.txt
 
 volumes:
   jenkins_home_summit:
