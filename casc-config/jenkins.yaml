@@ -17,8 +17,8 @@ jenkins:
     globalMatrix:
       grantedPermissions:
         - "Overall/Read:anonymous"
-        - "Job/Read:anonymous"
-        - "View/Read:anonymous"
+       # - "Job/Read:anonymous"
+       # - "View/Read:anonymous"
         - "Overall/Administer:authenticated"
 
   crumbIssuer: "standard"
